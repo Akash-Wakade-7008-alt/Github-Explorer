@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <h1>GitHub Developer Explorer</h1>
+    <div id="app">
+      <input
+        type="text"
+        placeholder="Enter GitHub username"
+        id="userInput"
+        aria-label="GitHub username"
+      />
+      <br />
+      <button id="searchBtn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-search"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+          />
+        </svg>
+        search
+      </button>
+    </div>
+
+    <div id="notice" aria-live="polite"></div>
+
+    <div id="userCard"></div>
+
+    <div id="repoList"></div>
+
+    <div id="langChart"></div>
+    <div></div>
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>
